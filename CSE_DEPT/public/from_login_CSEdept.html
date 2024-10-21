@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta name="keywords" content="html">
+    <meta name="robots" content="INDEX, FOLLOW">
+
+    <link rel="Website Icon" type="png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAASFBMVEVHcExnepBBWndPZoDl+P1PtuZStuaDsMoIN11HYXxevOghqeIbQGQ2r+MjquIlquJsveBWuueh1e+a0e5jvuhXuedBsuRVueeFIZY9AAAAGHRSTlMAttrwDfPjNP+njP//////JpxNTXqz59TSRsPoAAAAp0lEQVR4AZTR0RKCMAxE0RUDRWJTEJH//1PJC4UdJ4znvXc6G1y7NZs7nLQdA5D6zQNuUDZg0/T9U+CylRPLcGMNlDMPuCYKuHQImB5MqPbAa64ER28P8CMOWBYQCixxQONA/IOluE/VUkyK+Qo7XUAm2llA5DS0B+LECLIn+Aec0Gl0EoyN3+q9B7B/E3qdEMQnKylO2AqECUuIZO2AODEjtuI7EgEAjOcSoOuSGxsAAAAASUVORK5CYII=">
+    <title>Log in form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            font-family: system-ui;
+            background-size: cover;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-image: url('https://www.qu.edu.qa/static_file/qu/colleges/engineering/images/Computer%20Science%20and%20Engineering%20-%20Banner.jpg');
+        }
+
+
+        input[type=text] {
+            width: 87%;
+            outline: none;
+            margin: 12px 0px;
+            border-radius: 4px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            -webkit-transition: 0.7s;
+            border: 3px solid #c09e9e;
+        }
+
+
+        input[type=text]:focus {
+            width: 90%;
+            border: 3px solid black;
+        }
+
+
+        input[type=password] {
+            width: 85%;
+            height: 35px;
+            margin: -8px 0px;
+            border-radius: 4px;
+            border: 3px solid #c09e9e;
+            -webkit-transition: all ease 0.7s;
+        }
+
+
+        input[type=password]:focus {
+            width: 90%;
+            border: 3px solid #bbb;
+        }
+
+
+        .container {
+            margin: 8% 35%;
+            border: 2px solid #c09e9e;
+            background-color: #ededede8;
+            padding: 15px 25px 20px 35px;
+        }
+
+
+        .submit {
+            color: purple;
+            border: none;
+            margin: 30px 30px;
+            border-radius: 5px;
+            background-color: #c6d3d0;
+            text-decoration: underline;
+            padding: 8px 15px 8px 15px;
+        }
+
+
+        .submit:hover {
+            background-color: #BABFD2;
+        }
+
+
+        .refresh {
+            color: purple;
+            border: none;
+            position: absolute;
+            border-radius: 5px;
+            margin: -61px 182px;
+            background-color: #c6d3d0;
+            padding: 8px 15px 8px 15px;
+        }
+
+
+        .refresh:hover {
+            background-color: #BABFD2;
+        }
+
+
+        .login {
+            font-size: 30px;
+            color: #0069a6d6;
+        }
+
+
+        .login:hover {
+            color: #823c82;
+            cursor: pointer;
+        }
+
+
+        #btn-cross {
+            float: right;
+            font-size: 20px;
+            font-weight: 900;
+            margin-top: -65px;
+            -webkit-transition: 0.7s;
+        }
+
+
+        #btn-cross:hover {
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <label class="login"><b>Log in</b></label><br><br>
+
+        <p id="btn-cross"><a href="/index.html">&#10005;</a></p>
+
+        <!-- <form action="mailto:yourmailid@gmail.com" subject="Login From" method="post"> -->
+
+        <form action="/index.html" action="mailto:aniltodakr704@gmail.com">
+
+            <label for="firstname"><b>Username/Email</b></label>
+            <input type="text" id="fname" name="Username" placeholder="Username" required autocomplete="off">
+
+            <br><br>
+
+            <label for="password"><b>Password</b></label><br><br>
+            <input type="password" id="password" name="Password" placeholder="Password" required autocomplete="on">
+
+            <br><br>
+
+            <button class="submit" onclick="alert('You logged in successfully.');"><b>Log in</b></button>
+
+        </form>
+
+
+        <button class="refresh" type="refresh"><a href="/from_login_CSEdept.html"><b>Refresh</b></a></button>
+
+        <p>New user can Sign up <span><a href="/from_sign_CSEdept.html">here</a></span></p>
+
+    </div>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en-IN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Website Icon" type="png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAASFBMVEVHcExnepBBWndPZoDl+P1PtuZStuaDsMoIN11HYXxevOghqeIbQGQ2r+MjquIlquJsveBWuueh1e+a0e5jvuhXuedBsuRVueeFIZY9AAAAGHRSTlMAttrwDfPjNP+njP//////JpxNTXqz59TSRsPoAAAAp0lEQVR4AZTR0RKCMAxE0RUDRWJTEJH//1PJC4UdJ4znvXc6G1y7NZs7nLQdA5D6zQNuUDZg0/T9U+CylRPLcGMNlDMPuCYKuHQImB5MqPbAa64ER28P8CMOWBYQCixxQONA/IOluE/VUkyK+Qo7XUAm2llA5DS0B+LECLIn+Aec0Gl0EoyN3+q9B7B/E3qdEMQnKylO2AqECUuIZO2AODEjtuI7EgEAjOcSoOuSGxsAAAAASUVORK5CYII=">
+    <title>Sign up form</title>
+    <style>
+        /* Keep your existing CSS styles here */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label class="sign"><b>Sign up</b></label><br><br>
+        <p id="btn-cross"><a href="/login">&#10005;</a></p>
+        <form id="signup-form">
+            <label for="fname"><b>Name</b></label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your full name" required
+                autocomplete="off"><br><br>
+            <label for="phone"><b>Phone No.</b></label><br>
+            <input type="number" id="phone" name="phone" placeholder="Enter your phone no." required
+                autocomplete="off"><br><br>
+            <label for="email"><b>Mail</b></label><br>
+            <input type="email" id="email" name="email" placeholder="yourmail00@gmail.com" required
+                autocomplete="off"><br><br>
+            <label for="password"><b>Password</b></label><br>
+            <input type="password" id="password" name="password" placeholder="Password" required
+                autocomplete="off"><br><br>
+            <p><input type="checkbox" name="checked" required> You agree with our Privacy Policy & Terms of Service.</p>
+            <button class="submit" type="submit"><b>Submit</b></button>
+        </form>
+        <br>
+        <button class="refresh"><a href="/signup"><b>Refresh</b></a></button>
+    </div>
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const userData = Object.fromEntries(formData.entries());
+
+            try {
+                const response = await fetch('/api/signup', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(userData),
+                });
+
+                if (response.ok) {
+                    alert('User registered successfully!');
+                    window.location.href = '/login';
+                } else {
+                    alert('Failed to register user!');
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        });
+    </script>
+</body>
+
+</html>

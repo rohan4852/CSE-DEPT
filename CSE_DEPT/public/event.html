@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="Website Icon" type="png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAASFBMVEVHcExnepBBWndPZoDl+P1PtuZStuaDsMoIN11HYXxevOghqeIbQGQ2r+MjquIlquJsveBWuueh1e+a0e5jvuhXuedBsuRVueeFIZY9AAAAGHRSTlMAttrwDfPjNP+njP//////JpxNTXqz59TSRsPoAAAAp0lEQVR4AZTR0RKCMAxE0RUDRWJTEJH//1PJC4UdJ4znvXc6G1y7NZs7nLQdA5D6zQNuUDZg0/T9U+CylRPLcGMNlDMPuCYKuHQImB5MqPbAa64ER28P8CMOWBYQCixxQONA/IOluE/VUkyK+Qo7XUAm2llA5DS0B+LECLIn+Aec0Gl0EoyN3+q9B7B/E3qdEMQnKylO2AqECUuIZO2AODEjtuI7EgEAjOcSoOuSGxsAAAAASUVORK5CYII=">
+    <title>Event Managment</title>
+
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    ul {
+    margin: -108px 0px;
+    padding: 0;
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #22a2d8f2;
+}
+
+
+li {
+    float: left;
+
+}
+
+
+li a {
+    color: #ffffff;
+    display: block;
+    font-weight: bold;  
+    text-align: center;
+    padding: 17px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+li a:hover{
+    color: #bdf9fb;
+    border-bottom: 2px solid yellow;
+}
+
+
+    input[type=text] {
+        width: 87%;
+        outline: none;
+        margin: 12px 0px;
+        border-radius: 4px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        -webkit-transition: 0.7s;
+        border: 3px solid #c09e9e;
+    }
+
+
+    input[type=text]:focus {
+        width: 90%;
+        border: 3px solid black;
+    }
+
+
+    input[type=password] {
+        width: 85%;
+        height: 35px;
+        margin: -8px 0px;
+        border-radius: 4px;
+        border: 3px solid #c09e9e;
+        -webkit-transition: all ease 0.7s;
+    }
+
+
+    input[type=password]:focus{
+        width: 90%;
+        border: 3px solid #bbb;
+    }
+
+
+.form-container{
+    margin: 8% 35%;
+    border: 2px solid #c09e9e;
+    background-color: #ededede8;
+    padding: 15px 25px 20px 35px;
+}
+
+
+.submit{
+    color: purple;
+    border: none;
+    margin: 25px 0px;
+    border-radius: 5px;
+    background-color: #c6d3d0;
+    text-decoration: underline;
+    padding: 10px 150px 10px 150px;
+}
+
+
+.submit:hover{
+    background-color: #BABFD2;
+}
+
+
+
+.footer{
+    color: white;
+    height: 500px;
+    margin-top: 30px;
+    padding: 40px 40px;
+    font-family: system-ui;
+    background-color: #004e74; 
+}   
+    
+    
+.footer button{
+    z-index: 10;
+    right: 20px;
+    border: none;
+    color: white;
+    bottom: 30px;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    position: fixed;
+    overflow: hidden;
+    font-weight: bold;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #cccce0ba;
+}
+
+
+.footer button:hover{
+    background-color: #b1b1c8ba;
+}
+    </style>
+
+</head>
+<body>
+    
+<div>
+    <header>
+        <ul> 
+            <li><a href="C:\Users\Shree\Desktop\HTMLPrograms\CSEdept3.html">Home</a></li>
+            <li><a href="C:\Users\Shree\Desktop\HTMLPrograms\CSEdept_ServicesFile.html">Services</a></li>
+            <li><a href="C:\Users\Shree\Desktop\HTMLPrograms\CSEdept_AboutFile.html">Faculties</a></li>
+            <li><a href="C:\Users\Shree\Desktop\HTMLPrograms\CSEdept_MoUFile.html">MoU</a></li>
+            <li><a href="C:\Users\Shree\Desktop\HTMLPrograms\CSEdept_PlacementFile.html">Placements</a></li>
+            <li><a href="C:\Users\Shree\Desktop\HTMLPrograms\CSEdept_PEO_POFile.html">PEO & PO's</a></li>
+            <li><a href="C:\Users\Shree\Desktop\HTMLPrograms\CSEdept_Result_AnalysisFile.html">Result Analysis</a></li>
+            <li><a href="event.html">Events</a></li>
+        </ul>
+    </header>
+</div>
+
+
+
+<form class="form-container"> 
+    <div>
+        <label> Enter Username:</label><br>
+        <input type ="text" name ="username" placeholder ="Enter username" required="required" autocomplete="off">
+<br>
+        <label for = "inputpassword"> Enter Password:</label><br><br>
+        <input type = "password" name = "password" placeholder ="     Enter password" required="required" autocomplete="off"><br><br>
+        <label for = "inputrole"> Enter Role:</label><br>
+        <input type = "text" name = "role" placeholder ="Enter role" required="required">
+<br><br>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" required="required">
+        <label class="form-check-label" for="exampleCheck1">Remember Me</label> <br>
+        <button class="submit" type="submit">Login</button><br>
+        <a href="newuser.html"></a>
+        <a href = "register.html">Register For Event</a>
+    </div>
+</form>
+
+<div class="footer">
+  <div>
+      <h1>Contact Us </h1><br><br>
+          <h2><i class="material-icons">&#xe55f;</i> Location <br><a onclick="Geolocation"> Fabtech Technical Campus, College of Engineering And Research, C - Wing(Second floor), F695+2P6, Miraj - Pandharpur Road, Gate No. 565/1, Sangola - 413307.</p><a></h2><br><br>
+          <h2>&#128222; Phone No: +91 1234567890</h2><br><br>
+          <h2>&#128231; Email: info@ftccoe.ac.in</h2><br><br>
+          <h2><i style="font-size:24px" class="fa">&#xf0ac;</i> Website: <a href="https://ftccoe.ac.in/">www.ftccoe.ac.in</a></h2><br><br>
+
+<br>
+  <hr>
+<br>
+
+      <p style="font-size:20px; text-align: center;">Copyright &copy; 2024 Fabtech Technical Campus, College of Engineering Research, Sangola. All Rights Reserved.</p>
+
+<br>
+
+</div>
+
+
+  <div>
+      <button id="btt"><a href="#top">Tap to Top</a></button>
+  </div>
+
+  
+</div> 
+
+</body>
+</html>
