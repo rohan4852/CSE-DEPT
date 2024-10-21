@@ -22,6 +22,10 @@ app.use(express.static(__dirname + '/public'));
 
 app.use(express.json());
 
+if (password.length < 6) {
+    res.status(400).send({ message: 'Password must be at least 6 characters long' });
+    return;
+}
 // API endpoint to handle user registration
 app.post('/submit', (req, res) => {
     console.log('Received form submission:', req.body);
@@ -36,7 +40,6 @@ app.post('/submit', (req, res) => {
             res.status(500).send({ message: 'Failed to register user!' });
             return;
         }
-
         // Insert user data into the database
         const query = `INSERT INTO sign_up (name, phone, email, password) VALUES (?, ?, ?, ?)`;
         db.query(query, [name, phone, email, hash], (err, results) => {
